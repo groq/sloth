@@ -3,19 +3,19 @@ updates:
   - package-ecosystem: "gomod"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: 'weekly'
     ignore:
       # Ignore Kubernetes dependencies to have full control on them.
       - dependency-name: "k8s.io/*"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: 'weekly'
   - package-ecosystem: "docker"
     directory: "/docker/dev"
     schedule:
-      interval: "daily"
+      interval: 'weekly'
   - package-ecosystem: "docker"
     directory: "/docker/prod"
     schedule:
-      interval: "daily"
+      interval: 'weekly'
